@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>کلیه فلت</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="./assets/img/site/icons8-hut-64.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+     .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="./assets/img/site/icons8-hut-64.png" alt=""></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">خانه</a></li>
+          <li><a class="nav-link scrollto" href="./">سرویس ها</a></li>
+          <li><a class="nav-link scrollto" href="./">امکانات</a></li>
+          <li><a class="nav-link scrollto" href="./">تماس با ما</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a href="./" class="get-started-btn scrollto">شروع</a>
+    </div>
+  </header>
+
+  <main id="main">
+  <section id="account" class="account-section">
+
+    <div class="container">
+        <h2>فرم ثبت نام</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">نام</label>
+                <input type="text" id="firstName" name="firstName" placeholder="نام خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">نام خانوادگی</label>
+                <input type="text" id="lastName" name="lastName" placeholder="نام خانوادگی خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">شماره موبایل</label>
+                <input type="text" id="mobile" name="mobile" placeholder="شماره موبایل خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" name="password" placeholder="رمز عبور خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">تایید رمز عبور</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="رمز عبور خود را مجدداً وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="age">سن</label>
+                <input type="number" id="age" name="age" placeholder="سن خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">جنسیت</label>
+                <select id="gender" name="gender" required>
+                    <option value="">انتخاب کنید</option>
+                    <option value="male">مرد</option>
+                    <option value="female">زن</option>
+                    <option value="other">سایر</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nationalId">کد ملی</label>
+                <input type="text" id="nationalId" name="nationalId" placeholder="کد ملی خود را وارد کنید" required>
+            </div>
+            <div class="form-group">
+                <label for="idNumber">شماره شناسنامه</label>
+                <input type="text" id="idNumber" name="idNumber" placeholder="شماره شناسنامه خود را وارد کنید" required>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+              <button type="submit" class="submit-account">ثبت نام</button>
+            </div>
+        </form>
+    </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="col-l2 d-flex w-100">
+          <div class="info d-flex flex-md-nowrap flex-wrap w-100 justify-content-lg-around">
+            <div class="col-md-4 px-2 col-12 address d-flex align-items-center" style="flex-direction: row-reverse; direction: rtl; margin: 0;">
+              <i class="bi bi-geo-alt"></i>
+              <div class="w-100">
+                <h4>ادرس:</h4>
+                <p>ایران مازندران سوادکوه 100 متری جنگل اندارگلی</p>
+              </div>
+            </div>
+            <div class="col-md-4 px-2 col-12 phone d-flex align-items-center" style="flex-direction: row-reverse; direction: rtl; margin: 0;">
+              <i class="bi bi-phone"></i>
+              <div class="w-100" style="direction: ltr; text-align: right !important;">
+                <h4 style="direction: rtl; ">تلفن:</h4>
+                <a href="tel:02166957360">09120826615</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const mobile = document.getElementById('mobile').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const age = document.getElementById('age').value;
+        const gender = document.getElementById('gender').value;
+        const nationalId = document.getElementById('nationalId').value;
+        const idNumber = document.getElementById('idNumber').value;
+
+        if (password !== confirmPassword) {
+            alert('رمز عبور و تایید رمز عبور باید مطابقت داشته باشند');
+            return;
+        }
+
+        alert(`نام: ${firstName}\nنام خانوادگی: ${lastName}\nشماره موبایل: ${mobile}\nایمیل: ${email}\nسن: ${age}\nجنسیت: ${gender}\nکد ملی: ${nationalId}\nشماره شناسنامه: ${idNumber}`);
+    });
+</script>
+</body>
+
+</html>

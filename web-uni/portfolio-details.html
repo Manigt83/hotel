@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>کلیه فلت</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="./assets/img/site/icons8-hut-64.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="./assets/img/site/icons8-hut-64.png" alt=""></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">خانه</a></li>
+          <li><a class="nav-link scrollto" href="./">سرویس ها</a></li>
+          <li><a class="nav-link scrollto" href="./">امکانات</a></li>
+          <li><a class="nav-link scrollto" href="./">تماس با ما</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a href="./account.html" class="get-started-btn">اکانت</a>
+
+    </div>
+  </header>
+
+  <main id="main">
+  <section id="details" class="details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 d-flex col-12 flex-wrap">
+            <div class="list-container col-12">
+              <h2>سرویس های غذا</h2>
+              <div class="list-item">
+                  <input type="checkbox" id="item1">
+                  <label for="item1">صبحانه</label>
+                  <p>(مبلغ 100000+ هزار تومن اضافه میشود)</p>
+              </div>
+              <div class="list-item">
+                  <input type="checkbox" id="item2">
+                  <label for="item2">ناهار</label>
+                  <p>(مبلغ 100000+ هزار تومن اضافه میشود)</p>
+              </div>
+              <div class="list-item">
+                  <input type="checkbox" id="item3">
+                  <label for="item3">شام</label>
+                  <p>(مبلغ 100000+ هزار تومن اضافه میشود)</p>
+              </div>
+              <h2>موقعیت اتاق</h2>
+            <div class="list-item">
+                <input type="checkbox" id="item4">
+                <label for="item4">شمالی</label>
+            </div>
+            <div class="list-item">
+                <input type="checkbox" id="item5">
+                <label for="item5">جنوبی</label>
+            </div>
+            <h2>تخت اضافه</h2>
+            <div class="list-item">
+                <input type="checkbox" id="item6" onclick="toggleInput()">
+                <label for="item6">نیاز به تخت اضافه</label>
+                <p>(مبلغ 100000+ هزار تومن به ازای هر تخت اضافه میشود)</p>
+              </div>
+              <div id="extra-input" class="hidden">
+                <input type="number" placeholder="تعداد">
+                <button type="button" class="extra-submit" onclick="submitForm()">Submit</button>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="calendars col-12">
+              <div class="calendar-container">
+                <p>تاریخ شروع اقامت</p>
+                  <div class="header">
+                      <button id="prevMonth1">‹</button>
+                      <span id="monthYear1"></span>
+                      <button id="nextMonth1">›</button>
+                  </div>
+                  <div class="calendar" id="calendar1"></div>
+              </div>
+              <div class="calendar-container">
+                <p>تاریخ پایان اقامت</p>
+                  <div class="header">
+                      <button id="prevMonth2">‹</button>
+                      <span id="monthYear2"></span>
+                      <button id="nextMonth2">›</button>
+                  </div>
+                  <div class="calendar" id="calendar2"></div>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <a class="submit-datepicker">ثبت</a>
+            </div>
+          </div>
+        </div> 
+        <div class="col-12 justify-content-center d-flex py-3">
+          <div class="col-lg-6 col-12 row mt-3" style="justify-content: center;align-items: center;text-align: center;">
+            <h2>فرم ثبت اطلاعات</h2>
+            <p>جهت ارسال پیامک ها و خبر های جدید</p>
+            <div class="form-group" style="display: flex; flex-direction: column;">
+                <label for="mobile" style="text-align: right; font-size: 20px; font-weight: 700; padding: 8px 0 ;">شماره موبایل</label>
+                <input type="text" id="mobile" name="mobile" placeholder="شماره موبایل خود را وارد کنید" style="text-align: right; padding: 4px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column;"> 
+                <label for="email" style="text-align: right; font-size: 20px; font-weight: 700; padding: 8px 0;">ایمیل</label>
+                <input type="email"  id="email" name="email" placeholder="ایمیل خود را وارد کنید" style="text-align: right; padding: 4px;">
+            </div>
+            <a onclick="submitForm()" class="submit-datepicker">ثبت</a>
+      
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="col-l2 d-flex w-100">
+          <div class="info d-flex flex-md-nowrap flex-wrap w-100 justify-content-lg-around">
+            <div class="col-md-4 px-2 col-12 address d-flex align-items-center" style="flex-direction: row-reverse; direction: rtl; margin: 0;">
+              <i class="bi bi-geo-alt"></i>
+              <div class="w-100">
+                <h4>ادرس:</h4>
+                <p>ایران مازندران سوادکوه 100 متری جنگل اندارگلی</p>
+              </div>
+            </div>
+            <div class="col-md-4 px-2 col-12 phone d-flex align-items-center" style="flex-direction: row-reverse; direction: rtl; margin: 0;">
+              <i class="bi bi-phone"></i>
+              <div class="w-100" style="direction: ltr; text-align: right !important;">
+                <h4 style="direction: rtl; ">تلفن:</h4>
+                <a href="tel:02166957360">09120826615</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function toggleInput() {
+    const checkbox = document.getElementById('item6');
+    const extraInputDiv = document.getElementById('extra-input');
+    if (checkbox.checked) {
+        extraInputDiv.classList.remove('hidden');
+    } else {
+        extraInputDiv.classList.add('hidden');
+    }
+  }
+  </script>
+  <script>
+    function submitForm() {
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            alert(`شماره موبایل: ${mobile}\nایمیل: ${email}`);
+        }
+  </script>
+</body>
+
+</html>
